@@ -295,7 +295,7 @@ bool CConfigManager::SaveConfig(const std::string& configName)
 				SAVE_VAR(Vars::Aimbot::Projectile::AllowedHitboxes);
 				SAVE_VAR(Vars::Aimbot::Projectile::FeetAimIfOnGround);
 				SAVE_OTHER(Vars::Aimbot::Projectile::PredictionColor);
-				SAVE_VAR(Vars::Aimbot::Projectile::predTime);
+				SAVE_VAR(Vars::Aimbot::Projectile::PredTime);
 				SAVE_VAR(Vars::Aimbot::Projectile::ScanPoints);
 				SAVE_VAR(Vars::Aimbot::Projectile::ScanScale);
 				SAVE_VAR(Vars::Aimbot::Projectile::NoSpread);
@@ -644,7 +644,7 @@ bool CConfigManager::SaveConfig(const std::string& configName)
 				SAVE_VAR(Vars::Visuals::Beans::Brightness);
 				SAVE_VAR(Vars::Visuals::Beans::Speed);
 				SAVE_VAR(Vars::Visuals::Beans::Flags);
-				SAVE_VAR(Vars::Visuals::Beans::segments);
+				SAVE_VAR(Vars::Visuals::Beans::Segments);
 			}
 
 			SAVE_VAR(Vars::Visuals::despawnTime);
@@ -799,8 +799,8 @@ bool CConfigManager::SaveConfig(const std::string& configName)
 				SAVE_VAR(Vars::AntiHack::AntiAim::RandInterval);
 				SAVE_VAR(Vars::AntiHack::AntiAim::AntiOverlap);
 				SAVE_VAR(Vars::AntiHack::AntiAim::AntiBackstab);
-				SAVE_VAR(Vars::AntiHack::AntiAim::legjitter);
-				SAVE_VAR(Vars::AntiHack::AntiAim::invalidshootpitch);
+				SAVE_VAR(Vars::AntiHack::AntiAim::LegJitter);
+				SAVE_VAR(Vars::AntiHack::AntiAim::InvalidShootPitch);
 			}
 			//Resolver
 			{
@@ -1024,7 +1024,7 @@ bool CConfigManager::LoadConfig(const std::string& configName)
 				LOAD_VAR(Vars::Aimbot::Projectile::AllowedHitboxes);
 				LOAD_VAR(Vars::Aimbot::Projectile::FeetAimIfOnGround);
 				LOAD_OTHER(Vars::Aimbot::Projectile::PredictionColor);
-				LOAD_VAR(Vars::Aimbot::Projectile::predTime);
+				LOAD_VAR(Vars::Aimbot::Projectile::PredTime);
 				LOAD_VAR(Vars::Aimbot::Projectile::ScanPoints);
 				LOAD_VAR(Vars::Aimbot::Projectile::ScanScale);
 				LOAD_VAR(Vars::Aimbot::Projectile::NoSpread);
@@ -1380,7 +1380,7 @@ bool CConfigManager::LoadConfig(const std::string& configName)
 				LOAD_VAR(Vars::Visuals::Beans::Brightness);
 				LOAD_VAR(Vars::Visuals::Beans::Speed);
 				LOAD_VAR(Vars::Visuals::Beans::Flags);
-				LOAD_VAR(Vars::Visuals::Beans::segments);
+				LOAD_VAR(Vars::Visuals::Beans::Segments);
 			}
 
 			{
@@ -1527,8 +1527,8 @@ bool CConfigManager::LoadConfig(const std::string& configName)
 				LOAD_VAR(Vars::AntiHack::AntiAim::RandInterval);
 				LOAD_VAR(Vars::AntiHack::AntiAim::AntiOverlap);
 				LOAD_VAR(Vars::AntiHack::AntiAim::AntiBackstab);
-				LOAD_VAR(Vars::AntiHack::AntiAim::legjitter);
-				LOAD_VAR(Vars::AntiHack::AntiAim::invalidshootpitch);
+				LOAD_VAR(Vars::AntiHack::AntiAim::LegJitter);
+				LOAD_VAR(Vars::AntiHack::AntiAim::InvalidShootPitch);
 			}
 			//Resolver
 			{

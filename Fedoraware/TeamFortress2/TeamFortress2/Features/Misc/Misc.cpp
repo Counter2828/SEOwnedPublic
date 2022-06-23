@@ -88,7 +88,7 @@ void CMisc::LegJitter(CUserCmd* pCmd, CBaseEntity* pLocal)
 	static bool pos = true;
 
 	if (G::IsAttacking || G::ShouldShift) { return; }
-	if (pCmd->forwardmove == 0.f && pCmd->sidemove == 0.f && pLocal->GetVecVelocity().Length2D() < 10.f && Vars::AntiHack::AntiAim::legjitter.Value)
+	if (pCmd->forwardmove == 0.f && pCmd->sidemove == 0.f && pLocal->GetVecVelocity().Length2D() < 10.f && Vars::AntiHack::AntiAim::LegJitter.Value)
 	{
 		pos ? pCmd->forwardmove = 2.f : pCmd->forwardmove = -2.f;
 		pos ? pCmd->sidemove = 2.f : pCmd->sidemove = -2.f;

@@ -321,7 +321,7 @@ void CMenu::MenuAimbot()
 		if (TableColumnChild("AimbotCol3"))
 		{
 			SectionTitle("Projectile");
-			WSlider("Prediction Time", &Vars::Aimbot::Projectile::predTime.Value, 0.1f, 10.f, "%.1f");
+			WSlider("Prediction Time", &Vars::Aimbot::Projectile::PredTime.Value, 0.1f, 10.f, "%.1f");
 			ColorPickerL("Prediction Line Color", Vars::Aimbot::Projectile::PredictionColor);
 			{
 				WCombo("Sort method###ProjectileSortMethod", &Vars::Aimbot::Projectile::SortMethod.Value, { "FOV", "Distance" });
@@ -1057,7 +1057,7 @@ void CMenu::MenuVisuals()
 					WSlider("Beam amplitude", &Beans::Amplitude.Value, 0.0f, 10.f);
 					WSlider("Beam brightness", &Beans::Brightness.Value, 0.0f, 255.f);
 					WSlider("Beam speed", &Beans::Speed.Value, 0.0f, 5.f);
-					WSlider("Segments", &Beans::segments.Value, 1, 10); //what are good values for this
+					WSlider("Segments", &Beans::Segments.Value, 1, 10); //what are good values for this
 
 					// TODO: Reward this ugly code
 					{
@@ -1419,7 +1419,7 @@ void CMenu::MenuHvH()
 				WSlider("Random Interval", &Vars::AntiHack::AntiAim::RandInterval.Value, 0, 100, "%d"); HelpMarker("How often the random Anti-Aim should update");
 			}
 			WToggle("Resolver", &Vars::AntiHack::Resolver::Resolver.Value); HelpMarker("Enables Anti-aim resolver in the playerlist");
-			MultiCombo({ "AntiOverlap", "Jitter Legs", "HidePitchOnShot", "Anti-Backstab"}, { &Vars::AntiHack::AntiAim::AntiOverlap.Value, &Vars::AntiHack::AntiAim::legjitter.Value, &Vars::AntiHack::AntiAim::invalidshootpitch.Value, &Vars::AntiHack::AntiAim::AntiBackstab.Value }, "Misc.");
+			MultiCombo({ "AntiOverlap", "Jitter Legs", "HidePitchOnShot", "Anti-Backstab"}, { &Vars::AntiHack::AntiAim::AntiOverlap.Value, &Vars::AntiHack::AntiAim::LegJitter.Value, &Vars::AntiHack::AntiAim::InvalidShootPitch.Value, &Vars::AntiHack::AntiAim::AntiBackstab.Value }, "Misc.");
 
 			/* Section: Auto Peek */
 			SectionTitle("Auto Peek");

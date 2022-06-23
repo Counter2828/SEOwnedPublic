@@ -128,7 +128,7 @@ namespace Vars
 			inline CVar<bool> FeetAimIfOnGround{false};
 			inline CVar<bool> SplashPrediction{false};
 			inline Color_t PredictionColor{255, 255, 255, 255};
-			inline CVar<float> predTime{2.0f};
+			inline CVar<float> PredTime{2.0f};
 			inline CVar<bool> NoSpread{ false };
 		}
 
@@ -498,7 +498,7 @@ namespace Vars
 			inline CVar<float> Brightness{255.f};
 			inline CVar<float> Speed{0.2f};
 			inline CVar<int> Flags{65792};
-			inline CVar<int> segments{2};
+			inline CVar<int> Segments{2};
 		}
 
 		inline CVar<bool> BulletTracerRainbow{true};
@@ -691,9 +691,9 @@ namespace Vars
 			inline CVar<float> SpinSpeed{15.f};
 			inline CVar<int> RandInterval{25};
 			inline CVar<bool> AntiBackstab{false};
-			inline CVar<bool> legjitter{false}; // frick u fourteen
+			inline CVar<bool> LegJitter{false}; // frick u fourteen
 			inline CVar<bool> AntiOverlap{false};
-			inline CVar<bool> invalidshootpitch{false}; // i dont know what to name this its TRASH
+			inline CVar<bool> InvalidShootPitch{false}; // i dont know what to name this its TRASH |||||| MAYBE NAME IT WHAT IT FUCKING DOES INSTEAD OF "INVALID SHOOT PITCH"???????, Dont worry it will remain that until you fix it smelly - hivec2
 			// no reason to do this for projectile and melee cause u have psilent lel
 		}
 
